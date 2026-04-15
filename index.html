@@ -1307,68 +1307,68 @@
         // DADOS DO CARDÁPIO COM IMAGENS
         // ============================================================
         var menuData = [
-            { category: 'Drinks', items: [
-                { name: 'Chá Comigo', price: 'R$ 60,00', image: getImagePath('Cha Comigo'), description: 'Jagermeister, cha de limao, sake, limao espremido e toque de maca verde. Um drink equilibrado e refrescante.', tags: ['Premium', 'Refrescante'] },
-                { name: 'Chama o Bombeiro', price: 'R$ 34,00', image: getImagePath('Chama o Bombeiro'), description: 'Fireball, Coca-Cola, gengibre e limao. Um drink intenso, gelado e com toque picante.', tags: ['Apimentado', 'Intenso'] },
-                { name: 'No Pain, No Gain', price: 'R$ 34,00', image: getImagePath('No Pain, No Gain'), description: 'Licor de cafe, maracuja, laranja e tonica zero. Equilibrio perfeito entre doce e citrico.', tags: ['Citrico', 'Cafe'] },
-                { name: 'Alien Blood', price: 'R$ 32,00', image: getImagePath('Alien Blood'), description: 'Vodka, suco de limao, xarope de maca verde, hortela e agua com gas. Refrescante e misterioso.', tags: ['Refrescante', 'Verde'] },
-                { name: 'Banheira do Gugu', price: 'R$ 34,00', image: getImagePath('Banheira do Gugu'), description: 'Vodka, suco de limao, xarope de menta e soda de limao. Refrescancia com toque divertido.', tags: ['Refrescante', 'Menta'] },
-                { name: 'Thommy Shelby', price: 'R$ 36,00', image: getImagePath('Thommy Shelby'), description: 'Jim Beam, vermute tinto, gin e Angostura de laranja. Finalizado com canela.', tags: ['Whisky', 'Defumado'] },
-                { name: 'Viking Mule', price: 'R$ 34,00', image: getImagePath('Viking Mule'), description: 'Versao do Moscow Mule com vodka, limao, xarope de mel, laranja desidratada e gas.', tags: ['Vodka', 'Moscow Mule'] },
-                { name: 'Unicorn', price: 'R$ 32,00', image: getImagePath('Unicorn'), description: 'Suco de limao siciliano, xarope de melancia, agua com gas e toque doce especial.', tags: ['Colorido', 'Refrescante'] },
-                { name: 'Honolulu', price: 'R$ 32,00', image: getImagePath('Honolulu'), description: 'Rum Bacardi, limao, xarope de tangerina, laranja e gas. Tropical e leve.', tags: ['Tropical', 'Rum'] },
-                { name: 'Burning Mango', price: 'R$ 34,00', image: getImagePath('Burning Mango'), description: 'Tequila ouro, manga, limao, toque picante e borda de sal.', tags: ['Tequila', 'Picante'] }
-            ]},
-            { category: 'Chopp', items: [
-                { name: 'Chopp Pilsen 400ml', price: 'R$ 13,00', image: getImagePath('Chopp Pilsen 400ml'), description: 'Leve, refrescante e facil de beber.', tags: ['Pilsen', 'Classico'] },
-                { name: 'Chopp IPA 400ml', price: 'R$ 17,00', image: getImagePath('Chopp IPA 400ml'), description: 'Encorpado, aromatico e com amargor marcante.', tags: ['IPA', 'Lupulado'] }
-            ]},
-            { category: 'Brasileiros', items: [
-                { name: 'Kariri com Mel', price: 'R$ 20,00', image: getImagePath('Kariri com Mel'), description: 'Doce e equilibrado com toque de mel.', tags: ['Licor', 'Doce'] },
-                { name: 'Bombeirinho', price: 'R$ 20,00', image: getImagePath('Bombeirinho'), description: 'Classico brasileiro intenso e marcante.', tags: ['Classico', 'Intenso'] },
-                { name: 'Vodka + Energeqwtico', price: 'R$ 20,00', image: getImagePath('Vodka + Energetico'), description: 'Combinacao energetica e refrescante.', tags: ['Vodka', 'Energetico'] }
-            ]},
-            { category: 'Classicos', items: [
-                { name: 'Negroni', price: 'R$ 34,00', image: getImagePath('Negroni'), description: 'Drink forte e amargo na medida certa.', tags: ['Gin', 'Classico'] },
-                { name: 'Margarita', price: 'R$ 34,00', image: getImagePath('Margarita'), description: 'Refrescante, citrica e com toque de sal.', tags: ['Tequila', 'Mexicano'] },
-                { name: 'Tom Collins', price: 'R$ 34,00', image: getImagePath('Tom Collins'), description: 'Leve, citrico e super refrescante.', tags: ['Gin', 'Refrescante'] },
-                { name: 'Dry Martini', price: 'R$ 34,00', image: getImagePath('Dry Martini'), description: 'Elegante, seco e classico.', tags: ['Gin', 'Elegante'] }
-            ]},
-            { category: 'Gins', items: [
-                { name: 'Gin Tradicional', price: 'R$ 30,00', image: getImagePath('Gin Tradicional'), description: 'Gin com limao, agua tonica e zimbro.', tags: ['Gin', 'Classico'] },
-                { name: 'Gin Tropical', price: 'R$ 30,00', image: getImagePath('Gin Tropical'), description: 'Gin com energetico tropical, laranja e manjericao.', tags: ['Gin', 'Tropical'] },
-                { name: 'Apple Gin', price: 'R$ 30,00', image: getImagePath('Apple Gin'), description: 'Gin com energetico de maca verde e limao.', tags: ['Gin', 'Maca'] }
-            ]},
-            { category: 'Caipirinhas', items: [
-                { name: 'Hot Lemon', price: 'R$ 28,00', image: getImagePath('Hot Lemon'), description: 'Limao, gelo, acucar e destilado.', tags: ['Caipirinha', 'Classica'] },
-                { name: 'Fresh Melon', price: 'R$ 28,00', image: getImagePath('Fresh Melon'), description: 'Limao, melao e destilado.', tags: ['Caipirinha', 'Melao'] },
-                { name: 'Dreams', price: 'R$ 28,00', image: getImagePath('Dreams'), description: 'Maracuja, morango e limao.', tags: ['Caipirinha', 'Frutas'] }
-            ]},
-            { category: 'Burgers', items: [
-                { name: 'Kamaleao', price: 'R$ 36,00', image: getImagePath('Kamaleao'), description: 'Blend artesanal, provolone, bacon, maionese de alho, mostarda, picles, cebola roxa e pao brioche.', tags: ['Hamburguer', 'Classico'] },
-                { name: 'K-X Salada', price: 'R$ 34,00', image: getImagePath('K-X Salada'), description: 'Blend artesanal, queijo prato, maionese da casa, rucula, tomate e pao brioche.', tags: ['Hamburguer', 'Salada'] },
-                { name: 'K-X Burguer', price: 'R$ 30,00', image: getImagePath('K-X Burguer'), description: 'Blend artesanal, queijo prato e maionese da casa no brioche.', tags: ['Hamburguer', 'Classico'] },
-                { name: 'The Monster', price: 'R$ 48,00', image: getImagePath('The Monster'), description: 'Duplo blend, queijo, bacon, maionese da casa, barbecue e cebola crispy.', tags: ['Hamburguer', 'Gigante'] },
-                { name: 'Du Mato', price: 'R$ 36,00', image: getImagePath('Du Mato'), description: 'Blend vegano, queijo prato, maionese da casa, rucula, tomate e cebola crispy.', tags: ['Hamburguer', 'Vegano'] },
-                { name: 'Big Hot Cheese Peppers', price: 'R$ 36,00', image: getImagePath('Big Hot Cheese Peppers'), description: 'Blend, queijo prato, creme de gorgonzola, geleia de pimenta, rucula e pao australiano.', tags: ['Hamburguer', 'Apimentado'] },
-                { name: 'Gaucho', price: 'R$ 34,00', image: getImagePath('Gaucho'), description: 'Blend, queijo prato, bacon, maionese, barbecue e pao brioche com gergelim.', tags: ['Hamburguer', 'Barbecue'] }
-            ]},
-            { category: 'Porcoes', items: [
-                { name: 'Batata Chips', price: 'R$ 36,00', image: getImagePath('Batata Chips'), description: 'Batatas crocantes com sal, ervas finas e maionese defumada.', tags: ['Batata', 'Crocante'] },
-                { name: 'Pao de Pepperoni com Requeijao', price: 'R$ 55,00', image: getImagePath('Pao de Pepperoni com Requeijao'), description: 'Baguete recheada com pepperoni e requeijao, acompanha maionese defumada.', tags: ['Pao', 'Pepperoni'] },
-                { name: 'Linguica Suina Defumada', price: 'R$ 55,00', image: getImagePath('Linguica Suina Defumada'), description: 'Temperada no alho e ervas, acompanha farofa e molho barbecue.', tags: ['Linguica', 'Defumada'] }
-            ]},
-            { category: 'Lanches', items: [
-                { name: 'El Choripan', price: 'R$ 36,00', image: getImagePath('El Choripan'), description: 'Linguica suina, queijo provolone, mostarda e chimichurri na baguete.', tags: ['Lanche', 'Argentino'] }
-            ]},
-            { category: 'Soft Drinks', items: [
-                { name: 'Soda Italiana', price: 'R$ 14,00', image: getImagePath('Soda Italiana'), description: 'Refrigerante artesanal italiano com sabores classicos.', tags: ['Sem Alcool', 'Italiano'] },
-                { name: 'Agua', price: 'R$ 5,00', image: getImagePath('Agua'), description: 'Hidratacao pura e cristalina.', tags: ['Sem Alcool', 'Hidratacao'] },
-                { name: 'Coca Cola', price: 'R$ 5,00', image: getImagePath('Coca Cola'), description: 'O refrigerante oficial que combina com tudo.', tags: ['Sem Alcool', 'Classico'] },
-                { name: 'Tonica', price: 'R$ 6,00', image: getImagePath('Tonica'), description: 'Agua tonica gelada, perfeita pura ou como base para drinks.', tags: ['Sem Alcool', 'Tonica'] },
-                { name: 'Energetico Copo', price: 'R$ 12,00', image: getImagePath('Energetico Copo'), description: 'Energia pura para continuar a noite ate o amanhecer.', tags: ['Sem Alcool', 'Energia'] }
-            ]}
-        ];
+    { category: 'Drinks', items: [
+        { name: 'Chá Comigo', price: 'R$ 60,00', image: getImagePath('Chá Comigo'), description: 'Jägermeister, chá de limão, saquê, limão espremido e toque de maçã verde. Um drink equilibrado e refrescante.', tags: ['Premium', 'Refrescante'] },
+        { name: 'Chama o Bombeiro', price: 'R$ 34,00', image: getImagePath('Chama o Bombeiro'), description: 'Fireball, Coca-Cola, gengibre e limão. Um drink intenso, gelado e com toque picante.', tags: ['Apimentado', 'Intenso'] },
+        { name: 'No Pain, No Gain', price: 'R$ 34,00', image: getImagePath('No Pain, No Gain'), description: 'Licor de café, maracujá, laranja e tônica zero. Equilíbrio perfeito entre doce e cítrico.', tags: ['Cítrico', 'Café'] },
+        { name: 'Alien Blood', price: 'R$ 32,00', image: getImagePath('Alien Blood'), description: 'Vodka, suco de limão, xarope de maçã verde, hortelã e água com gás. Refrescante e misterioso.', tags: ['Refrescante', 'Verde'] },
+        { name: 'Banheira do Gugu', price: 'R$ 34,00', image: getImagePath('Banheira do Gugu'), description: 'Vodka, suco de limão, xarope de menta e soda de limão. Refrescância com toque divertido.', tags: ['Refrescante', 'Menta'] },
+        { name: 'Thommy Shelby', price: 'R$ 36,00', image: getImagePath('Thommy Shelby'), description: 'Jim Beam, vermute tinto, gin e Angostura de laranja. Finalizado com canela.', tags: ['Whisky', 'Defumado'] },
+        { name: 'Vik Vie', price: 'R$ 34,00', image: getImagePath('Vik Vie'), description: 'Versão do Moscow Mule com vodka, limão, xarope de mel, laranja desidratada e gás.', tags: ['Vodka', 'Moscow Mule'] },
+        { name: 'Unicorn', price: 'R$ 32,00', image: getImagePath('Unicorn'), description: 'Suco de limão siciliano, xarope de melancia, água com gás e toque doce especial.', tags: ['Colorido', 'Refrescante'] },
+        { name: 'Honolulu', price: 'R$ 32,00', image: getImagePath('Honolulu'), description: 'Rum Bacardi, limão, xarope de tangerina, laranja e gás. Tropical e leve.', tags: ['Tropical', 'Rum'] },
+        { name: 'Burning Mango', price: 'R$ 34,00', image: getImagePath('Burning Mango'), description: 'Tequila ouro, manga, limão, toque picante e borda de sal.', tags: ['Tequila', 'Picante'] }
+    ]},
+    { category: 'Chopp', items: [
+        { name: 'Chopp Pilsen 400ml', price: 'R$ 13,00', image: getImagePath('Chopp Pilsen 400ml'), description: 'Leve, refrescante e fácil de beber.', tags: ['Pilsen', 'Clássico'] },
+        { name: 'Chopp IPA 400ml', price: 'R$ 17,00', image: getImagePath('Chopp IPA 400ml'), description: 'Encorpado, aromático e com amargor marcante.', tags: ['IPA', 'Lupulado'] }
+    ]},
+    { category: 'Brasileiros', items: [
+        { name: 'Kariri com Mel', price: 'R$ 20,00', image: getImagePath('Kariri com Mel'), description: 'Doce e equilibrado com toque de mel.', tags: ['Licor', 'Doce'] },
+        { name: 'Bombeirinho', price: 'R$ 20,00', image: getImagePath('Bombeirinho'), description: 'Clássico brasileiro intenso e marcante.', tags: ['Clássico', 'Intenso'] },
+        { name: 'Vodka + Energético', price: 'R$ 20,00', image: getImagePath('Vodka + Energético'), description: 'Combinação energética e refrescante.', tags: ['Vodka', 'Energético'] }
+    ]},
+    { category: 'Clássicos', items: [
+        { name: 'Negroni', price: 'R$ 34,00', image: getImagePath('Negroni'), description: 'Drink forte e amargo na medida certa.', tags: ['Gin', 'Clássico'] },
+        { name: 'Margarita', price: 'R$ 34,00', image: getImagePath('Margarita'), description: 'Refrescante, cítrica e com toque de sal.', tags: ['Tequila', 'Mexicano'] },
+        { name: 'Tom Collins', price: 'R$ 34,00', image: getImagePath('Tom Collins'), description: 'Leve, cítrico e super refrescante.', tags: ['Gin', 'Refrescante'] },
+        { name: 'Dry Martini', price: 'R$ 34,00', image: getImagePath('Dry Martini'), description: 'Elegante, seco e clássico.', tags: ['Gin', 'Elegante'] }
+    ]},
+    { category: 'Gins', items: [
+        { name: 'Gin Tradicional', price: 'R$ 30,00', image: getImagePath('Gin Tradicional'), description: 'Gin com limão, água tônica e zimbro.', tags: ['Gin', 'Clássico'] },
+        { name: 'Gin Tropical', price: 'R$ 30,00', image: getImagePath('Gin Tropical'), description: 'Gin com energético tropical, laranja e manjericão.', tags: ['Gin', 'Tropical'] },
+        { name: 'Apple Gin', price: 'R$ 30,00', image: getImagePath('Apple Gin'), description: 'Gin com energético de maçã verde e limão.', tags: ['Gin', 'Maçã'] }
+    ]},
+    { category: 'Caipirinhas', items: [
+        { name: 'Hot Lemon', price: 'R$ 28,00', image: getImagePath('Hot Lemon'), description: 'Limão, gelo, açúcar e destilado.', tags: ['Caipirinha', 'Clássica'] },
+        { name: 'Fresh Melon', price: 'R$ 28,00', image: getImagePath('Fresh Melon'), description: 'Limão, melão e destilado.', tags: ['Caipirinha', 'Melão'] },
+        { name: 'Dreams', price: 'R$ 28,00', image: getImagePath('Dreams'), description: 'Maracujá, morango e limão.', tags: ['Caipirinha', 'Frutas'] }
+    ]},
+    { category: 'Burgers', items: [
+        { name: 'Kamaleão', price: 'R$ 36,00', image: getImagePath('Kamaleão'), description: 'Blend artesanal, provolone, bacon, maionese de alho, mostarda, picles, cebola roxa e pão brioche.', tags: ['Hambúrguer', 'Clássico'] },
+        { name: 'K-X Salada', price: 'R$ 34,00', image: getImagePath('K-X Salada'), description: 'Blend artesanal, queijo prato, maionese da casa, rúcula, tomate e pão brioche.', tags: ['Hambúrguer', 'Salada'] },
+        { name: 'K-X Burguer', price: 'R$ 30,00', image: getImagePath('K-X Burguer'), description: 'Blend artesanal, queijo prato e maionese da casa no brioche.', tags: ['Hambúrguer', 'Clássico'] },
+        { name: 'The Monster', price: 'R$ 48,00', image: getImagePath('The Monster'), description: 'Duplo blend, queijo, bacon, maionese da casa, barbecue e cebola crispy.', tags: ['Hambúrguer', 'Gigante'] },
+        { name: 'Du Mato', price: 'R$ 36,00', image: getImagePath('Du Mato'), description: 'Blend vegano, queijo prato, maionese da casa, rúcula, tomate e cebola crispy.', tags: ['Hambúrguer', 'Vegano'] },
+        { name: 'Big Hot Cheese Peppers', price: 'R$ 36,00', image: getImagePath('Big Hot Cheese Peppers'), description: 'Blend, queijo prato, creme de gorgonzola, geleia de pimenta, rúcula e pão australiano.', tags: ['Hambúrguer', 'Apimentado'] },
+        { name: 'Gaúcho', price: 'R$ 34,00', image: getImagePath('Gaúcho'), description: 'Blend, queijo prato, bacon, maionese, barbecue e pão brioche com gergelim.', tags: ['Hambúrguer', 'Barbecue'] }
+    ]},
+    { category: 'Porções', items: [
+        { name: 'Batata Chips', price: 'R$ 36,00', image: getImagePath('Batata Chips'), description: 'Batatas crocantes com sal, ervas finas e maionese defumada.', tags: ['Batata', 'Crocante'] },
+        { name: 'Pão de Pepperoni com Requeijão', price: 'R$ 55,00', image: getImagePath('Pão de Pepperoni com Requeijão'), description: 'Baguete recheada com pepperoni e requeijão, acompanha maionese defumada.', tags: ['Pão', 'Pepperoni'] },
+        { name: 'Linguiça Suína Defumada', price: 'R$ 55,00', image: getImagePath('Linguiça Suína Defumada'), description: 'Temperada no alho e ervas, acompanha farofa e molho barbecue.', tags: ['Linguiça', 'Defumada'] }
+    ]},
+    { category: 'Lanches', items: [
+        { name: 'El Choripan', price: 'R$ 36,00', image: getImagePath('El Choripan'), description: 'Linguiça suína, queijo provolone, mostarda e chimichurri na baguete.', tags: ['Lanche', 'Argentino'] }
+    ]},
+    { category: 'Soft Drinks', items: [
+        { name: 'Soda Italiana', price: 'R$ 14,00', image: getImagePath('Soda Italiana'), description: 'Refrigerante artesanal italiano com sabores clássicos.', tags: ['Sem Álcool', 'Italiano'] },
+        { name: 'Água', price: 'R$ 5,00', image: getImagePath('Água'), description: 'Hidratação pura e cristalina.', tags: ['Sem Álcool', 'Hidratação'] },
+        { name: 'Coca Cola', price: 'R$ 5,00', image: getImagePath('Coca Cola'), description: 'O refrigerante oficial que combina com tudo.', tags: ['Sem Álcool', 'Clássico'] },
+        { name: 'Tônica', price: 'R$ 6,00', image: getImagePath('Tônica'), description: 'Água tônica gelada, perfeita pura ou como base para drinks.', tags: ['Sem Álcool', 'Tônica'] },
+        { name: 'Energético Copo', price: 'R$ 12,00', image: getImagePath('Energético Copo'), description: 'Energia pura para continuar a noite até o amanhecer.', tags: ['Sem Álcool', 'Energia'] }
+    ]}
+];
 
         // ============================================================
         // VARIÁVEIS GLOBAIS
