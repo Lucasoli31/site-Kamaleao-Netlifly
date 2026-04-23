@@ -2336,7 +2336,7 @@ const nascimentoInput = document.getElementById("cadastroNascimento");
        
         function validarFormulario() {
   const nomeValido = nomeInput.value.length >= 3 && nomeInput.value.length <= 40;
-  const whatsappValido = whatsappInput.value.length >= 10 && whatsappInput.value.length <= 40;
+  const whatsappValido = whatsappInput.value.length >= 10 && whatsappInput.value.length <= 11;
     const dataValida = nascimentoInput.value !== "";
 
   if (nomeValido && whatsappValido && dataValida) {
@@ -2354,8 +2354,8 @@ const nascimentoInput = document.getElementById("cadastroNascimento");
 nomeInput.addEventListener("input", () => {
   nomeInput.value = nomeInput.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, "");
 
-  if (nomeInput.value.length > 20) {
-    nomeInput.value = nomeInput.value.slice(0, 20);
+  if (nomeInput.value.length > 40) {
+    nomeInput.value = nomeInput.value.slice(0, 40);
   }
      validarFormulario(); 
 });
