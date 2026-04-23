@@ -1658,6 +1658,31 @@
         </div>
     </div>
 
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC7R2-3LiJ-3N54WOxYHJO8agRZOK0x4F8",
+    authDomain: "kamaleao-drinkeria.firebaseapp.com",
+    projectId: "kamaleao-drinkeria",
+    storageBucket: "kamaleao-drinkeria.firebasestorage.app",
+    messagingSenderId: "1054744634776",
+    appId: "1:1054744634776:web:669850262e23d5e8e0b7ed",
+    measurementId: "G-XELW8S2FYP"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+    
     <script>
         // ============================================================
         // FUNÇÃO PARA GERAR CAMINHO DA IMAGEM
@@ -2066,7 +2091,7 @@ function closeCadastroModal() {
 }
 
 // Salvar cadastro
-function saveCadastro(event) {
+async function saveCadastro(event) {
     event.preventDefault();
     
     const nome = document.getElementById('cadastroNome').value.trim();
@@ -2096,7 +2121,12 @@ function saveCadastro(event) {
     cadastros.push(cadastro);
     
     // Salvar no localStorage
-    localStorage.setItem(CADASTROS_KEY, JSON.stringify(cadastros));
+    await addDoc(collection(db, "cadastros"), {
+    nome: nome,
+    whatsapp: whats,
+    nascimento: nascimento,
+    dataCadastro: new Date()
+});
     
     // Mostrar sucesso
     document.getElementById('cadastroForm').style.display = 'none';
