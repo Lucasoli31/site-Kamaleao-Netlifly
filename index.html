@@ -2331,6 +2331,22 @@ document.addEventListener('keydown', function(e) {
     <script>
 const nomeInput = document.getElementById("cadastroNome");
 const whatsappInput = document.getElementById("cadastroWhats");
+const cadastroBtn = document.getElementById("cadastroBtn");
+       
+        function validarFormulario() {
+  const nomeValido = nomeInput.value.length >= 3 && nomeInput.value.length <= 20;
+  const whatsappValido = whatsappInput.value.length >= 10 && whatsappInput.value.length <= 15;
+
+  if (nomeValido && whatsappValido) {
+    cadastroBtn.disabled = false;
+    cadastroBtn.style.opacity = "1";
+    cadastroBtn.style.cursor = "pointer";
+  } else {
+    cadastroBtn.disabled = true;
+    cadastroBtn.style.opacity = "0.5";
+    cadastroBtn.style.cursor = "not-allowed";
+  }
+}
 
 // NOME: só letras + até 20 caracteres
 nomeInput.addEventListener("input", () => {
@@ -2339,6 +2355,7 @@ nomeInput.addEventListener("input", () => {
   if (nomeInput.value.length > 20) {
     nomeInput.value = nomeInput.value.slice(0, 20);
   }
+     validarFormulario(); 
 });
 
 // WHATSAPP: só números + até 15 caracteres
@@ -2348,7 +2365,13 @@ whatsappInput.addEventListener("input", () => {
   if (whatsappInput.value.length > 15) {
     whatsappInput.value = whatsappInput.value.slice(0, 15);
   }
+    validarFormulario();
 });
+        
+cadastroBtn.disabled = true;
+cadastroBtn.style.opacity = "0.5";
+cadastroBtn.style.cursor = "not-allowed";
+        validarFormulario();
 </script>
 </body>
 </html>
