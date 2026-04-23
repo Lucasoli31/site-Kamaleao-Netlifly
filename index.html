@@ -1180,35 +1180,31 @@
 /* BOTÃO CADASTRO */
 /* ============================================ */
 .cadastro-section {
-    padding: 40px 20px;
-    text-align: center;
-    background: linear-gradient(180deg, transparent, rgba(255, 45, 120, 0.03));
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
 }
 
 .cadastro-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px 32px;
-    background: linear-gradient(135deg, var(--accent-pink), var(--accent-cyan));
+    background: linear-gradient(135deg, #6a00ff, #00c3ff);
+    color: white;
     border: none;
+    padding: 14px 18px;
     border-radius: 50px;
-    color: #000;
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     transition: all 0.3s ease;
-    box-shadow: 0 0 30px rgba(255, 45, 120, 0.4);
 }
 
 .cadastro-btn:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 0 50px rgba(255, 45, 120, 0.6);
+    transform: scale(1.05);
 }
-
 .cadastro-btn svg {
     width: 22px;
     height: 22px;
