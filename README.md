@@ -57,7 +57,7 @@ A aplicação utiliza serviços em nuvem para garantir escalabilidade, disponibi
 
 A aplicação está hospedada utilizando GitHub Pages:
 
-👉 Acesse o projeto: **(coloque aqui seu link)**
+👉 Acesse o projeto: https://lucasoli31.github.io/site-Kamaleao/
 
 ---
 
